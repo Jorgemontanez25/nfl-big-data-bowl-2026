@@ -1,1 +1,20 @@
+# Virtual env
 .venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (RAW + GENERATED)
+data/raw/
+data/sample/
+data/processed/
+
+# Models
+models/
+
+# Reports (optional but recommended)
+reports/

@@ -36,6 +36,7 @@ def select_model_columns(df: pd.DataFrame) -> pd.DataFrame:
         "game_id",
         "play_id",
         "nfl_id",
+        "player_name",  
         "frame_id",
         "x",
         "y",

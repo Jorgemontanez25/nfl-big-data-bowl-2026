@@ -1,20 +1,66 @@
-# Virtual env
+# ===============================
+# Virtual Environment
+# ===============================
 .venv/
+venv/
+env/
 
-# Python cache
+# ===============================
+# Python Cache
+# ===============================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
+# ===============================
 # Jupyter
+# ===============================
 .ipynb_checkpoints/
 
+# ===============================
 # Data (RAW + GENERATED)
+# ===============================
 data/raw/
 data/sample/
 data/processed/
 
-# Models
-models/
+# ===============================
+# Models (IGNORE ALL by default)
+# ===============================
+models/*
 
-# Reports (optional but recommended)
+# ✅ Allow ONLY deployable models
+!models/final_deploy_xgboost/
+!models/final_deploy_xgboost/model_ball_land_x.pkl
+!models/final_deploy_xgboost/model_ball_land_y.pkl
+!models/final_deploy_xgboost/feature_columns.json
+!models/final_deploy_xgboost/training_metadata.json
+
+# ===============================
+# Reports / Outputs
+# ===============================
 reports/
+
+# ===============================
+# Logs
+# ===============================
+*.log
+
+# ===============================
+# OS Files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# VSCode / IDE
+# ===============================
+.vscode/
+.idea/
+
+# ===============================
+# Temporary Files
+# ===============================
+*.tmp
+*.bak

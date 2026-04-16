@@ -1,5 +1,5 @@
 # 🏈 NFL Ball Landing Prediction  
-### Big Data Bowl 2026 | End-to-End ML System + Deployment
+### Big Data Bowl 2026 | End-to-End Machine Learning System
 
 <p align="center">
   <img src="assets/nfl_logo.png" width="120"/>
@@ -8,6 +8,16 @@
 <p align="center">
   <b>Predicting ball landing position from player tracking data using Machine Learning</b><br>
   Built with XGBoost · Deployed with Gradio · Hosted on Hugging Face Spaces
+</p>
+
+<p align="center">
+  <a href="https://huggingface.co/spaces/Montanez25/NFL_Player_Tracking_ML_Ball_Landing_Prediction">
+    <img src="https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=huggingface">
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Model-XGBoost-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/UI-Gradio-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Focus-Sports%20Analytics-red?style=for-the-badge">
 </p>
 
 ---
@@ -25,12 +35,7 @@ This project answers a key question in football analytics:
 
 > **Given player tracking data at a specific moment, where will the ball land?**
 
-Using NFL Big Data Bowl tracking data, this project builds a complete machine learning pipeline:
-
-- Feature engineering from raw tracking data  
-- Model development (Random Forest → XGBoost)  
-- Evaluation and error analysis  
-- Deployment as an interactive ML application  
+Using NFL Big Data Bowl tracking data, this project builds a complete **end-to-end machine learning pipeline**, from raw data to a deployed interactive application.
 
 ---
 
@@ -84,30 +89,29 @@ Deployment (Gradio + Hugging Face Spaces)
   - MAE
   - RMSE
   - R²
-- Error analysis:
-  - Distribution of prediction errors
+- Analysis:
+  - Error distribution
   - Performance by player position
 
 ---
 
-### 🎯 Deployment
-
-- Built with **Gradio**
-- Hosted on **Hugging Face Spaces**
-- Real-time predictions
-- Visual output on NFL field
-
----
-
-## 🎮 App Features
+## 🎮 Application Features
 
 - Interactive input panel for player tracking variables  
 - Real-time ball landing prediction  
-- Field visualization with:
+- Field visualization including:
   - Player position  
-  - Predicted landing point  
-  - Trajectory line  
+  - Predicted landing location  
+  - Trajectory path  
 - Preloaded example scenarios  
+
+---
+
+## 📸 Preview
+
+<p align="center">
+  <img src="assets/app_preview.png" width="800"/>
+</p>
 
 ---
 
@@ -133,7 +137,7 @@ nfl-big-data-bowl-2026/
 │   ├── deploy_features.py
 │   └── config.py
 │
-├── assets/                   # Images / logo
+├── assets/                   # Static assets (logo, images)
 ├── requirements.txt
 └── README.md
 ```
@@ -183,9 +187,17 @@ http://localhost:7860
 
 ## 📊 Results Summary
 
-- XGBoost outperformed the baseline Random Forest  
-- Improved prediction stability across player roles  
-- Better modeling of nonlinear player motion dynamics  
+- XGBoost significantly improved performance over baseline
+- Better generalization across player roles
+- More stable predictions for nonlinear motion patterns
+
+---
+
+## 💡 Key Learnings
+
+- Feature engineering is critical for spatiotemporal data  
+- Capturing motion + context is essential in sports analytics  
+- Deployment transforms models into usable products  
 
 ---
 
@@ -195,7 +207,7 @@ http://localhost:7860
 - Model multi-player interactions
 - Sequence-based models (LSTM / Transformers)
 - Real-time play simulation
-- Integration with live tracking data
+- Integration with live tracking systems
 
 ---
 
@@ -218,6 +230,6 @@ This project is for educational and research purposes as part of the NFL Big Dat
 
 ## ⭐ Support
 
-If you found this project interesting or useful:
+If you found this project interesting:
 
 👉 Give it a ⭐ on GitHub
